@@ -2,8 +2,11 @@ import { Quote } from "lucide-react";
 
 const Testimonials = () => {
   return (
-    <section id="depoimentos" className="section-padding section-alt">
-      <div className="container mx-auto">
+    <section id="depoimentos" className="section-padding section-alt relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img src="/images/midia_15.jpg" alt="" className="w-full h-full object-cover opacity-[0.05]" aria-hidden="true" />
+      </div>
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
             O que dizem nossos clientes
