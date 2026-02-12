@@ -1,4 +1,5 @@
 import { Shield, Clock, ThumbsUp, Award } from "lucide-react";
+import bgAbout from "@/assets/bg-about.jpg";
 
 const features = [
   { icon: Clock, title: "20 anos de experiência", desc: "Tradição e confiança construídas ao longo de duas décadas de trabalho." },
@@ -11,8 +12,8 @@ const About = () => {
   return (
     <section id="sobre" className="section-padding relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.04]"
-        style={{ backgroundImage: "url('/images/midia_3.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.06]"
+        style={{ backgroundImage: `url('${bgAbout}')` }}
         aria-hidden="true"
       />
       <div className="container mx-auto relative z-10">

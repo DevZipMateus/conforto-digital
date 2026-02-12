@@ -1,11 +1,12 @@
 import { Quote } from "lucide-react";
+import bgTestimonials from "@/assets/bg-testimonials.jpg";
 
 const Testimonials = () => {
   return (
     <section id="depoimentos" className="section-padding section-alt relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.05]"
-        style={{ backgroundImage: "url('/images/midia_15.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.08]"
+        style={{ backgroundImage: `url('${bgTestimonials}')` }}
         aria-hidden="true"
       />
       <div className="container mx-auto relative z-10">
