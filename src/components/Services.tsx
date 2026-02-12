@@ -25,6 +25,22 @@ const Services = () => {
           </p>
         </div>
 
+        {/* Service images highlight */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div className="relative rounded-2xl overflow-hidden group h-64">
+            <img src="/images/midia_10.jpg" alt="Técnico realizando manutenção em ar-condicionado" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent flex items-end p-6">
+              <h3 className="text-primary-foreground font-display font-bold text-xl">Manutenção especializada</h3>
+            </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden group h-64">
+            <img src="/images/midia_5.jpg" alt="Técnico realizando limpeza de ar-condicionado" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent flex items-end p-6">
+              <h3 className="text-primary-foreground font-display font-bold text-xl">Limpeza profissional</h3>
+            </div>
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) => (
             <div

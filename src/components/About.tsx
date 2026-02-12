@@ -16,12 +16,24 @@ const About = () => {
             Sobre a empresa
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6 rounded-full" />
-          <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed">
-            A <strong className="text-foreground">Ilson Refrigeração e Ar Condicionado</strong>, localizada em Pederneiras, construiu sua trajetória ao longo de 20 anos de tradição, trabalho e constantes melhorias no setor de refrigeração e climatização. Desde o início, a empresa foi fundada com o propósito de oferecer serviços de qualidade, confiança e transparência, sempre priorizando o bom atendimento e a satisfação dos clientes.
-          </p>
-          <p className="max-w-3xl mx-auto text-muted-foreground text-lg leading-relaxed mt-4">
-            Ao longo dessas duas décadas, conquistamos a confiança de clientes residenciais, comerciais e institucionais, tornando-nos referência em instalação, manutenção e venda de equipamentos de refrigeração e ar-condicionado em Pederneiras e região.
-          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="rounded-2xl overflow-hidden shadow-lg">
+            <img
+              src="/images/midia_65.jpg"
+              alt="Loja da Ilson Refrigeração com produtos em exposição"
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              A <strong className="text-foreground">Ilson Refrigeração e Ar Condicionado</strong>, localizada em Pederneiras, construiu sua trajetória ao longo de 20 anos de tradição, trabalho e constantes melhorias no setor de refrigeração e climatização. Desde o início, a empresa foi fundada com o propósito de oferecer serviços de qualidade, confiança e transparência, sempre priorizando o bom atendimento e a satisfação dos clientes.
+            </p>
+            <p className="text-muted-foreground text-lg leading-relaxed mt-4">
+              Ao longo dessas duas décadas, conquistamos a confiança de clientes residenciais, comerciais e institucionais, tornando-nos referência em instalação, manutenção e venda de equipamentos de refrigeração e ar-condicionado em Pederneiras e região.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
