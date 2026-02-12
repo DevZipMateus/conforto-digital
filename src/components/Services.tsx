@@ -1,4 +1,5 @@
 import { Wind, Thermometer, Wrench, Snowflake, Coffee, Droplets, Zap, Settings } from "lucide-react";
+import bgServices from "@/assets/bg-services.jpg";
 
 const services = [
   { icon: Wind, title: "Instalação de ar-condicionado", desc: "Instalação profissional de splits, multi-splits e sistemas de climatização." },
@@ -15,8 +16,8 @@ const Services = () => {
   return (
     <section id="servicos" className="section-padding section-alt relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.05]"
-        style={{ backgroundImage: "url('/images/midia_12.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.07]"
+        style={{ backgroundImage: `url('${bgServices}')` }}
         aria-hidden="true"
       />
       <div className="container mx-auto relative z-10">

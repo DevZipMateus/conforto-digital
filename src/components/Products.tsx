@@ -1,4 +1,5 @@
 import { Wind, Refrigerator, Wrench, Monitor, Droplets, WashingMachine } from "lucide-react";
+import bgProducts from "@/assets/bg-products.jpg";
 
 const products = [
   { icon: Wind, name: "Ar-condicionado" },
@@ -13,8 +14,8 @@ const Products = () => {
   return (
     <section id="produtos" className="section-padding relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.04]"
-        style={{ backgroundImage: "url('/images/midia_8.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.06]"
+        style={{ backgroundImage: `url('${bgProducts}')` }}
         aria-hidden="true"
       />
       <div className="container mx-auto relative z-10">

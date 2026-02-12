@@ -1,11 +1,12 @@
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
+import bgContact from "@/assets/bg-contact.jpg";
 
 const Contact = () => {
   return (
     <section id="contato" className="section-padding relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.04]"
-        style={{ backgroundImage: "url('/images/midia_20.jpg')" }}
+        className="absolute inset-0 bg-cover bg-center bg-fixed opacity-[0.06]"
+        style={{ backgroundImage: `url('${bgContact}')` }}
         aria-hidden="true"
       />
       <div className="container mx-auto relative z-10">
