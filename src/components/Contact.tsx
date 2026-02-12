@@ -2,8 +2,11 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contato" className="section-padding">
-      <div className="container mx-auto">
+    <section id="contato" className="section-padding relative overflow-hidden">
+      <div className="absolute inset-0">
+        <img src="/images/midia_20.jpg" alt="" className="w-full h-full object-cover opacity-[0.04]" aria-hidden="true" />
+      </div>
+      <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
             Entre em contato
