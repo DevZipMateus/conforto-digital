@@ -1,4 +1,5 @@
-import { Wind, Refrigerator, Wrench, Monitor, Droplets, WashingMachine } from "lucide-react";
+import { Wind, Refrigerator, Wrench, Monitor, Droplets, WashingMachine, ShoppingBag, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 import bgProducts from "@/assets/bg-products.jpg";
 
 const products = [
@@ -41,6 +42,28 @@ const Products = () => {
               <h3 className="text-sm font-semibold text-foreground">{p.name}</h3>
             </div>
           ))}
+        </div>
+
+        {/* Vitrine Section */}
+        <div className="mt-16 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-primary/20 p-8 md:p-12 text-center">
+          <div className="flex justify-center mb-4">
+            <div className="w-16 h-16 rounded-full bg-primary/15 flex items-center justify-center">
+              <ShoppingBag className="w-8 h-8 text-primary" />
+            </div>
+          </div>
+          <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-3">
+            Confira nossa Vitrine Online
+          </h3>
+          <p className="max-w-xl mx-auto text-muted-foreground mb-6">
+            Veja todos os nossos produtos disponíveis, preços e condições especiais diretamente na nossa vitrine virtual.
+          </p>
+          <Link
+            to="/vitrine"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-accent transition-colors text-lg"
+          >
+            <ExternalLink size={20} />
+            Acessar Vitrine
+          </Link>
         </div>
       </div>
     </section>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { ShoppingBag } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
@@ -42,6 +44,13 @@ const Hero = () => {
             >
               Nossos serviços
             </a>
+            <Link
+              to="/vitrine"
+              className="px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/80 transition-colors text-lg flex items-center gap-2"
+            >
+              <ShoppingBag size={20} />
+              Ver Vitrine
+            </Link>
           </div>
         </div>
       </div>
