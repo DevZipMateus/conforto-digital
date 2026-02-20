@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ShoppingBag } from "lucide-react";
 
 const navLinks = [
   { label: "Início", href: "#inicio" },
@@ -46,6 +47,13 @@ const Header = () => {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/vitrine"
+            className="ml-2 px-5 py-2 text-sm font-semibold bg-accent text-accent-foreground rounded-lg hover:bg-accent/80 transition-colors flex items-center gap-2"
+          >
+            <ShoppingBag size={16} />
+            Vitrine
+          </Link>
           <a
             href="https://wa.me/551432846395?text=Ola%2C%20tudo%20bem%3F%20pode%20me%20ajudar%3F%20"
             target="_blank"
@@ -79,6 +87,14 @@ const Header = () => {
               {link.label}
             </a>
           ))}
+          <Link
+            to="/vitrine"
+            onClick={() => setMobileOpen(false)}
+            className="mt-3 block text-center px-5 py-3 font-semibold bg-accent text-accent-foreground rounded-lg flex items-center justify-center gap-2"
+          >
+            <ShoppingBag size={16} />
+            Vitrine
+          </Link>
           <a
             href="https://wa.me/551432846395?text=Ola%2C%20tudo%20bem%3F%20pode%20me%20ajudar%3F%20"
             target="_blank"
